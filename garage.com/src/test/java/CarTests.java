@@ -21,15 +21,16 @@ public class CarTests {
 
 		String actualModel = car.getModel();
 
-		assertEquals(actualModel, Car.getModel() , "");
+		assertEquals(actualModel, Car.getModel() , "Corvette");
 	}
 
 	@Test
 	public void canStartCar() {
 		Car car = this.Car;
-
+		
+		car.start();
 		boolean isStarted = car.getIsStarted();
 
-		assertTrue(isStarted, "");
+		assertTrue(isStarted, "Car has started");
 	}
 }
